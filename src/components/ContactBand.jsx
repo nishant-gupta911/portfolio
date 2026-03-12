@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Mail, Github, Linkedin, ArrowRight, Phone } from 'lucide-react';
+import { Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
 const ContactBand = () => {
@@ -35,8 +35,8 @@ const ContactBand = () => {
                         I&apos;m actively looking for opportunities in AI/ML engineering and full-stack development. Let&apos;s talk!
                     </p>
 
-                    {/* CTA Buttons */}
-                    <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+                    {/* CTA Button */}
+                    <div className="flex justify-center mb-12">
                         <a
                             href="mailto:nishantgupta2999@gmail.com"
                             className="group inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold tracking-wide transition-all hover:scale-105 active:scale-95 text-sm uppercase bg-white text-black"
@@ -44,13 +44,6 @@ const ContactBand = () => {
                             <Mail size={16} />
                             <span>Get in Touch</span>
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </a>
-                        <a
-                            href="tel:+919102702999"
-                            className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/15 bg-white/3 text-white/70 hover:border-accent-purple/40 hover:text-white text-sm font-medium uppercase tracking-wide transition-all backdrop-blur-sm"
-                        >
-                            <Phone size={16} />
-                            +91 9102702999
                         </a>
                     </div>
 
