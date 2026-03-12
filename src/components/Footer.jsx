@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
 
                     <p className="flex items-center gap-1.5 text-xs text-white/15">
-                        Built with <Heart size={12} className="text-accent-purple/40" /> and React
+                        Built with <Heart size={12} className="text-accent-purple/40" /> and care
                     </p>
                 </div>
             </div>
