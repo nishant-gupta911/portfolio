@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { NavMenu, NavMenuItem, IconItem, HoveredLink } from './ui/navbar-menu';
 import projects from '../data/projects';
 import skills from '../data/skills';
@@ -101,12 +101,6 @@ const Navbar = () => {
                                         description="nishantgupta2999@gmail.com"
                                         href="mailto:nishantgupta2999@gmail.com"
                                         icon={Mail}
-                                    />
-                                    <IconItem
-                                        title="Phone"
-                                        description="+91 9102702999"
-                                        href="tel:+919102702999"
-                                        icon={Phone}
                                     />
                                     <IconItem
                                         title="GitHub"
