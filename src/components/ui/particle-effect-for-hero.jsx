@@ -276,7 +276,7 @@ const AntiGravityCanvas = () => {
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 z-0 overflow-hidden cursor-crosshair"
+      className="absolute inset-0 z-0 overflow-hidden cursor-default"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
