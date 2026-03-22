@@ -38,11 +38,7 @@ const Hero = () => {
                     />
                 </div>
 
-                {/* Atmospheric glow behind the sphere */}
-                <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-b from-accent-purple/15 to-purple-600/5 blur-3xl z-[2]"></div>
 
-                {/* Planet / sphere element */}
-                <div className="z-[3] absolute top-[58%] left-1/2 -translate-x-1/2 w-[500px] h-[500px] md:w-[600px] md:h-[600px] backdrop-blur-3xl rounded-full bg-[radial-gradient(circle_at_25%_90%,_#1e386b_15%,_#000000de_70%,_#000000ed_100%)]"></div>
             </div>
 
             {/* ===== Content Overlay ===== */}
