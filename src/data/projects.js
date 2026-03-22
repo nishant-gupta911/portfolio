@@ -40,6 +40,18 @@ export const projects = [
         context: 'AI for Agriculture',
     },
     {
+        id: 7,
+        title: 'Plant Disease Detection',
+        subtitle: 'AI-Powered Leaf Disease Classification',
+        description: 'Deep learning diagnostic system that identifies 28 distinct plant disease classes from leaf imagery using EfficientNetB0. Features a full inference pipeline with real-time image upload, confidence-scored predictions, and treatment recommendations — bridging the gap between precision agriculture and accessible technology.',
+        tech: ['Python', 'PyTorch', 'FastAPI', 'React', 'EfficientNetB0'],
+        github: 'https://github.com/nishant-gupta911/plant-disease-detection.git',
+        demo: '#',
+        featured: true,
+        year: '2025',
+        context: 'AI for Agriculture',
+    },
+    {
         id: 4,
         title: 'Vibe Basket',
         subtitle: 'Full Stack E-Commerce Platform',

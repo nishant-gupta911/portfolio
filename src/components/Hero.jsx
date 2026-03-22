@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
-import AntiGravityCanvas from './ui/particle-effect-for-hero';
+import LightningBg from './ui/lightning-bg';
 import TypewriterText from './TypewriterText';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
@@ -22,10 +22,30 @@ const Hero = () => {
 
     return (
         <section id="hero" className="relative h-screen w-full overflow-hidden bg-black">
-            {/* Particle Canvas Background */}
-            <AntiGravityCanvas />
+            {/* ===== Lightning WebGL Background ===== */}
+            <div className="absolute inset-0 z-0">
+                {/* Dark base overlay */}
+                <div className="absolute inset-0 bg-black/50 z-[1]"></div>
 
-            {/* Content Overlay */}
+                {/* Central lightning beam */}
+                <div className="absolute inset-0">
+                    <LightningBg
+                        hue={260}
+                        xOffset={0}
+                        speed={1.6}
+                        intensity={0.6}
+                        size={2}
+                    />
+                </div>
+
+                {/* Atmospheric glow behind the sphere */}
+                <div className="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-b from-accent-purple/15 to-purple-600/5 blur-3xl z-[2]"></div>
+
+                {/* Planet / sphere element */}
+                <div className="z-[3] absolute top-[58%] left-1/2 -translate-x-1/2 w-[500px] h-[500px] md:w-[600px] md:h-[600px] backdrop-blur-3xl rounded-full bg-[radial-gradient(circle_at_25%_90%,_#1e386b_15%,_#000000de_70%,_#000000ed_100%)]"></div>
+            </div>
+
+            {/* ===== Content Overlay ===== */}
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none px-6">
                 <div className="max-w-4xl w-full text-center space-y-8">
                     {/* Tag */}
@@ -36,7 +56,7 @@ const Hero = () => {
                         className="inline-block"
                     >
                         <span className="py-1.5 px-4 border border-white/15 text-white/50 bg-white/3 rounded-full text-[11px] font-mono tracking-[0.2em] uppercase backdrop-blur-sm">
-                            AI / ML Engineer &amp; Full-Stack Developer
+                            AI / ML Engineer &amp; Web Developer
                         </span>
                     </motion.div>
 
@@ -116,16 +136,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: typedComplete ? 1 : 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-pulse pointer-events-none z-10 text-white/20"
-            >
-                <span className="text-[10px] uppercase tracking-[0.25em]">Scroll</span>
-                <div className="w-px h-8 bg-linear-to-b from-white/20 to-transparent" />
-            </motion.div>
+
         </section>
     );
 };

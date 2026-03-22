@@ -59,6 +59,7 @@ const ProjectCard = ({ project, index, inView }) => {
         'from-amber-500/15 via-transparent to-rose-500/10',
         'from-rose-500/15 via-transparent to-orange-500/10',
         'from-cyan-500/15 via-transparent to-violet-500/10',
+        'from-green-500/15 via-transparent to-emerald-500/10',
     ];
 
     return (
@@ -98,7 +99,7 @@ const ProjectCard = ({ project, index, inView }) => {
             />
 
             {/* Card gradient bg */}
-            <div className={`absolute inset-0 bg-linear-to-br ${gradientColors[index % 4]} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
+            <div className={`absolute inset-0 bg-linear-to-br ${gradientColors[index % gradientColors.length]} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
             {/* Grid pattern overlay */}
             <div
