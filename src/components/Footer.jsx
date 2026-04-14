@@ -1,8 +1,15 @@
+import { useEffect } from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 import { RetroGrid } from './ui/retro-grid';
 
 const Footer = () => {
     const year = new Date().getFullYear();
+
+    useEffect(() => {
+        const count = parseInt(localStorage.getItem('visitorCount') || '121') + 1;
+        localStorage.setItem('visitorCount', count);
+        document.getElementById('visitor-count').textContent = count;
+    }, []);
 
     return (
         <footer className="relative pt-44 pb-14 border-t border-white/6 bg-black overflow-hidden">
@@ -30,9 +37,14 @@ const Footer = () => {
                         </a>
                     </div>
 
-                    <p className="flex items-center gap-1.5 text-xs text-white/15">
-                        Built with <Heart size={12} className="text-accent-purple/40" /> and care
-                    </p>
+                    <div className="flex flex-col items-center gap-1 sm:items-end">
+                        <p className="flex items-center gap-1.5 text-xs text-white/15">
+                            Built with <Heart size={12} className="text-accent-purple/40" /> and care
+                        </p>
+                        <p className="text-sm font-medium text-white/70">
+                            <span aria-hidden="true">👁 </span> Visitors: <span id="visitor-count" className="font-semibold text-white/90"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
