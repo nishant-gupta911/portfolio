@@ -87,6 +87,18 @@ export const projects = [
         year: '2025',
         context: 'Generative AI',
     },
+    {
+        id: 8,
+        title: 'Invincible',
+        subtitle: 'RAG-Based Intelligent Study Assistant',
+        description: 'Built an 8-stage RAG pipeline supporting 9+ document formats with dual OCR (Tesseract + Gemini Vision) and ChromaDB. Features hybrid retrieval combining dense + keyword search ranked by MiniLM-L6-v2, 10-turn session memory, and citation-grounded generation with Gemini Flash for accurate, hallucination-free study assistance.',
+        tech: ['Python', 'RAG', 'ChromaDB', 'Gemini API', 'Tesseract', 'MiniLM', 'FastAPI', 'React'],
+        github: 'https://github.com/nishant-gupta911/INVINCIBLE.git',
+        demo: '#',
+        featured: true,
+        year: '2025',
+        context: 'Generative AI & RAG',
+    },
 ];
 
 export default projects;
