@@ -76,18 +76,6 @@ export const projects = [
         context: 'Android Development',
     },
     {
-        id: 6,
-        title: 'LLM Chatbots',
-        subtitle: 'Transformer-Powered Conversational AI',
-        description: 'Experimented with building conversational AI systems using Transformer models. Worked on RAG workflows, prompt engineering, and modular deployment using LangChain, FastAPI, and Docker.',
-        tech: ['Python', 'Transformers', 'LangChain', 'RAG', 'FastAPI', 'OpenAI API', 'Docker'],
-        github: 'https://github.com/nishant-gupta911/LLM-chatbots',
-        demo: '#',
-        featured: true,
-        year: '2025',
-        context: 'Generative AI',
-    },
-    {
         id: 8,
         title: 'Invincible',
         subtitle: 'RAG-Based Intelligent Study Assistant',
