@@ -42,7 +42,7 @@ const Footer = () => {
                             Built with <Heart size={12} className="text-accent-purple/40" /> and care
                         </p>
                         <p className="text-sm font-medium text-white/70">
-                            <span aria-hidden="true">👁 </span> Visitors: <span id="visitor-count" className="font-semibold text-white/90"></span>
+                            <span aria-hidden="true"></span> Visitors: <span id="visitor-count" className="font-semibold text-white/90"></span>
                         </p>
                     </div>
                 </div>

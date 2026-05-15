@@ -60,10 +60,7 @@ const CapabilitySection = () => {
                         What I&apos;m Working On Right Now
                     </p>
                     <p className="mx-auto max-w-2xl text-sm leading-relaxed text-white/40">
-                        Currently fine-tuning a model for women&apos;s health, focused on early detection and pattern recognition from clinical data. It&apos;s a sensitive space, so I&apos;m being careful with data handling, class imbalance, and making sure the model does not overfit on minority cases. Still early, but the direction feels clear.
-                    </p>
-                    <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-white/40">
-                        Also improving Invincible by setting up a proper retrieval eval to check how often the right chunk lands in the top-4, and I&apos;m planning to deploy it publicly soon.
+                        Extending Invincible with two major features: a BERT-based re-ranker to replace the current cross-encoder for faster, more accurate retrieval, and an experimental video generation module that converts uploaded lecture content into short explainer clips. Planning to deploy it publicly once retrieval accuracy crosses 80% on my eval set.
                     </p>
                 </motion.div>
 

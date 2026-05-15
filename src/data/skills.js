@@ -9,7 +9,7 @@ export const skills = {
     },
     mlAi: {
         title: 'ML / AI',
-        items: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'Computer Vision', 'Generative AI', 'LangChain', 'RAG', 'Prompt Engineering', 'Feature Engineering', 'Model Evaluation'],
+        items: ['Scikit-learn', 'TensorFlow', 'PyTorch', 'Computer Vision', 'Generative AI', 'LangChain', 'RAG', 'Prompt Engineering', 'Feature Engineering', 'Model Evaluation', 'QLoRA', 'LoRA', 'Unsloth', 'GGUF', 'Ollama', 'LLaMA'],
     },
     dataScience: {
         title: 'Data Engineering',
@@ -33,7 +33,7 @@ export const skills = {
     },
     tools: {
         title: 'Tools & Cloud',
-        items: ['Git', 'GitHub', 'Docker', 'Jupyter Notebook', 'Linux', 'Azure AI', 'Firebase', 'Streamlit'],
+        items: ['Git', 'GitHub', 'Docker', 'Jupyter Notebook', 'Linux', 'Azure AI', 'Firebase', 'Streamlit', 'HuggingFace', 'Gradio', 'Colab'],
     },
 };
 
