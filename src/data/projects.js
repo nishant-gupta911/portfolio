@@ -46,7 +46,7 @@ export const projects = [
         description: 'Developed a 3-model ML pipeline (Random Forest + EfficientNetB0) for crop yield prediction, price forecasting (R²: 0.9635, RMSE: 151.94), and plant disease detection (28 classes, 96%+ accuracy). Engineered FastAPI backend with Docker deployment and Next.js frontend across 4 pages — sub-2s inference time supporting 10+ crop types.',
         tech: ['Python', 'PyTorch', 'FastAPI', 'Streamlit'],
         github: 'https://github.com/nishant-gupta911/krishimind-ai',
-        demo: '#',
+        demo: 'https://krishi-mind-sustain-ai.vercel.app/',
         featured: true,
         year: '2025',
         context: 'AI FOR AGRICULTURE',
